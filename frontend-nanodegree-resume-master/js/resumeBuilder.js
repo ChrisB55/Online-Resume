@@ -22,7 +22,7 @@ var work = {
       "dates" : "Two Years",
       "location": "Washington, D.C.",
       "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing."
-      
+
     },
     {
       "employer": "Americans for Safe Access",
@@ -91,7 +91,7 @@ var education = {
       "url" : "https://www.udemy.com/code-dynamic-websites/learn/v4/overview",
       "school" : "Code College",
       "dates" : "July 2016",
-      
+
     },
   ],
 };
@@ -103,7 +103,7 @@ var projects = {
     "url" :"https://github.com/Chrisx55/Portfolio-Project",
     "date" : "2016",
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-    "images" : ["images/197x148.gif"]    
+    "images" : ["images/197x148.gif"]
     }
   ]
 };
@@ -154,9 +154,9 @@ function displayWork() {
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
 			var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
 			var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
-			
+
             var formattedDatesWorked = HTMLworkDates.replace("%data%", work.jobs[i].dates);
-			
+
             var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
 
 			var formattedEmployerWorkTitle = formattedEmployer + formattedWorkTitle;
@@ -236,6 +236,8 @@ education.display = function() {
 }
 
 education.display();
+
+$("#mapDiv").append(googleMap);
 
 // $("#main").append(work["position"]);
 // $("#main").append(education.name);
