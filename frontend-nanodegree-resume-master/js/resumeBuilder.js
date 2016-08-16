@@ -47,14 +47,14 @@ var education = {
         "location": "Greensboro, NC",
         "degree": "BA",
         "dates": "1999-2002",
-        "majors": "Political Science",
+        "majors": ["Political Science", " Array"],
         "url": "http://www.guilfordcollege.edu"
     }, {
         "name": "Catholic University of America",
         "location": "Washington, D.C.",
         "degree": "MA",
         "dates": "2006-2007",
-        "majors": "Political Science", 
+        "majors": ["Political Science", " Requirement"],
         "url": "http://www.cua.edu"
     }],
     "onlineCourses": [{
@@ -117,15 +117,17 @@ bio.display = function() {
         bio.skills.forEach(function(skill) {
             var formattedSkill = HTMLskills.replace("%data%", skill);
             $("#skills").append(formattedSkill);
-        })
+        });
     }
 
 
-    for (i in formattedContactInfo) {
-        $("#topContacts").append(formattedContactInfo[i]);
-        $("#footerContacts").append(formattedContactInfo[i]);
+    for (var i in formattedContactInfo) {
+        if (formattedContactInfo.hasOwnProperty(i)) {
+            $("#topContacts").append(formattedContactInfo[i]);
+            $("#footerContacts").append(formattedContactInfo[i]);
+        }
     }
-}
+};
 
 bio.display();
 
@@ -134,7 +136,7 @@ work.display = function() {
     if (work.jobs.length > 0) {
         $("#workExperience").append(HTMLworkStart);
 
-        for (i in work.jobs) {
+        for (var i = 0; i < work.jobs.length; i++) {
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
             var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
             var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
@@ -149,33 +151,36 @@ work.display = function() {
         }
 
     }
-
-}
+};
 
 work.display();
 
-if (projects.projects.length > 0) {
-    $("#projects").append(HTMLprojectStart);
+projects.display = function() {
+    if (projects.projects.length > 0) {
+        $("#projects").append(HTMLprojectStart);
 
-    for (var i = 0; i < projects.projects.length; i++) {
-        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
-        var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].date);
-        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+        for (var i = 0; i < projects.projects.length; i++) {
+            var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
+            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].date);
+            var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
 
-        $(".project-entry:last").append(formattedProjectTitle);
-        $(".project-entry:last").append(formattedProjectDates);
-        $(".project-entry:last").append(formattedProjectDescription);
+            $(".project-entry:last").append(formattedProjectTitle);
+            $(".project-entry:last").append(formattedProjectDates);
+            $(".project-entry:last").append(formattedProjectDescription);
 
-        for (img in projects.projects[i].images) {
-            var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images);
-            $(".project-entry:last").append(formattedProjectImage);
+            for (var img in projects.projects[i].images) {
+                if (projects.projects.hasOwnProperty(img)) {
+                    var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images);
+                    $(".project-entry:last").append(formattedProjectImage);
+                }
+            }
         }
-
     }
-}
+};
+projects.display();
 
 if (education.schools.length > 0 || education.onlineCourses.length > 0) {
-    for (i in education.schools) {
+    for (var i = 0; i < education.schools.length; i++) {
         $("#education").append(HTMLschoolStart);
         for (var i = 0; i < education.schools.length; i++) {
             var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
@@ -190,11 +195,12 @@ if (education.schools.length > 0 || education.onlineCourses.length > 0) {
             $(".education-entry:last").append(formattedSchoolLocation);
             $(".education-entry:last").append(formattedSchoolMajor);
         }
+
     }
 }
 if (education.onlineCourses.length > 0) {
     $("#education").append(HTMLonlineClasses);
-    for (i in education.onlineCourses) {
+    for (var i = 0; i < education.onlineCourses.length; i++) {
         $("#education").append(HTMLschoolStart);
         var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
         var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
@@ -205,6 +211,7 @@ if (education.onlineCourses.length > 0) {
         $(".education-entry:last").append(formattedOnlineDates);
         $(".education-entry:last").append(formattedOnlineURL);
     }
+
 }
 
 $('#mapDiv').append(googleMap);
