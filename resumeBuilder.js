@@ -58,15 +58,10 @@ var education = {
         "url": "http://www.cua.edu"
     }],
     "onlineCourses": [{
-        "title": "Programming Foundations: HTML5 + CSS3 for Entrepreneurs",
-        "school": "Udemy",
-        "dates": " June 2016",
-        "url": "https://www.udemy.com/html-css-more/learn/v4/overview"
-    }, {
-        "title": "JavaScript Basics",
+        "title": "HTML5 Canvas",
         "school": "Udacity",
         "dates": " July 2016",
-        "url": "https://www.udacity.com/course/javascript-basics--ud804"
+        "url": "https://www.udacity.com/courses/html5-canvas--ud292"
     }, {
         "title": "Object-Oriented JavaScript",
         "school": "Udacity",
@@ -77,7 +72,25 @@ var education = {
         "url": "https://www.udemy.com/code-dynamic-websites/learn/v4/overview",
         "school": "Code College",
         "dates": "July 2016",
-
+        "title": "Programming Foundations: HTML5 + CSS3 for Entrepreneurs",
+        "school": "Udemy",
+        "dates": " July 2016",
+        "url": "https://www.udemy.com/html-css-more/learn/v4/overview"
+        }, {
+          "title": "JavaScript Basics",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/javascript-basics--ud804"
+        }, {
+            "title": "Intro To HTMl and CSS",
+            "school": "Udacity",
+            "dates": "June 2016",
+            "url": "https://www.udacity.com/courses/intro-to-html-and-css--ud304"
+        }, {
+          "title": "Programming Foundations: HTML5 + CSS3 for Entrepreneurs",
+          "school": "Udemy",
+          "dates": " June 2016",
+          "url": "https://www.udemy.com/html-css-more/learn/v4/overview"
     }, ],
 };
 
