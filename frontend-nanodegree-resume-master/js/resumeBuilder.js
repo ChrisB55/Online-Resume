@@ -9,7 +9,7 @@ var bio = {
         "location": "Washington D.C.",
     },
     "welcomeMessage": "Welcome to my Resume page.",
-    "skills": ["HTML5", "CSS", "JS", "PHP", "Digital Communications", "Social Media", "Brazilian Jiu Jitsu"],
+    "skills": ["HTML5", "CSS", "JS", "Digital Communications", "Social Media", "Brazilian Jiu Jitsu"],
     "biopic": "images/fry.jpg"
 };
 
@@ -19,25 +19,25 @@ var work = {
         "title": "Communications and Website Development Advisor",
         "dates": "2016-Current",
         "location": "Washington, D.C.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+        "description": "Freelance web development and communication consultant."
     }, {
         "employer": "Americans for Safe Access",
         "title": "Press Secretary",
-        "dates": "2014-2015",
+        "dates": "2015",
         "location": "Washington, D.C.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+        "description": "Managed messaging and media strategy on medical cannabis access."
     }, {
         "employer": "Second Chance Campaign",
         "title": "Communications Director",
         "dates": "2013-2014",
         "location": "Washington, D.C.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+        "description": "Managed messaging and comprehensive communications strategy for  multi-state  campaign  to  reform  Stand  Your Ground laws."
     }, {
         "employer": "Media Matters",
         "title": "Deputy Team Leader",
         "dates": "2011-2013",
         "location": "Washington, D.C.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+        "description": "Created website content on gun violence and right-wing extremism."
     }]
 };
 
@@ -58,15 +58,20 @@ var education = {
         "url": "http://www.cua.edu"
     }],
     "onlineCourses": [{
-        "title": "Programming Foundations: HTML5 + CSS3 for Entrepreneurs",
-        "school": "Udemy",
-        "dates": " June 2016",
-        "url": "https://www.udemy.com/html-css-more/learn/v4/overview"
-    }, {
-        "title": "JavaScript Basics",
+      "title": "Browser Rendering Optimization",
+      "school": "Udacity",
+      "dates": " August 2016",
+      "url": "https://www.udacity.com/course/browser-rendering-optimization--ud860"
+      }, {
+      "title": "Website Performance Optimization",
+      "school": "Udacity",
+      "dates": " August 2016",
+      "url": "https://www.udacity.com/course/website-performance-optimization--ud884"
+      }, {
+        "title": "HTML5 Canvas",
         "school": "Udacity",
         "dates": " July 2016",
-        "url": "https://www.udacity.com/course/javascript-basics--ud804"
+        "url": "https://www.udacity.com/courses/html5-canvas--ud292"
     }, {
         "title": "Object-Oriented JavaScript",
         "school": "Udacity",
@@ -77,7 +82,32 @@ var education = {
         "url": "https://www.udemy.com/code-dynamic-websites/learn/v4/overview",
         "school": "Code College",
         "dates": "July 2016",
-
+        "url": "https://www.udemy.com/code-dynamic-websites/learn/v4/overview",
+        }, {
+          "title": "Intro to jQUERY",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/intro-to-jquery--ud245"
+        }, {
+          "title": "JavaScript Basics",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/javascript-basics--ud804"
+        }, {
+          "title": "Responsive Images",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/responsive-images--ud882"
+        }, {
+          "title": "Responsive Web Design Fundamentals",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893"
+        }, {
+            "title": "Intro To HTML and CSS",
+            "school": "Udacity",
+            "dates": "June 2016",
+            "url": "https://www.udacity.com/courses/intro-to-html-and-css--ud304"
     }, ],
 };
 
