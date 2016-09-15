@@ -9,13 +9,13 @@ var bio = {
         "location": "Washington D.C.",
     },
     "welcomeMessage": "Welcome to my Resume page.",
-    "skills": ["HTML5", "CSS", "JS", "PHP", "Digital Communications", "Social Media", "Brazilian Jiu Jitsu"],
+    "skills": ["HTML5", "CSS", "JS", "Digital Communications", "Social Media", "Brazilian Jiu Jitsu"],
     "biopic": "images/fry.jpg"
 };
 
 var work = {
     "jobs": [{
-        "employer": "Independent Consultant",
+        "employer": "Free Lance Consultant",
         "title": "Communications and Website Development Advisor",
         "dates": "2016-Current",
         "location": "Washington, D.C.",
@@ -58,6 +58,26 @@ var education = {
         "url": "http://www.cua.edu"
     }],
     "onlineCourses": [{
+      "title": "Ruby on Rails: An Introduction",
+      "school": "John Hopkins University",
+      "dates": " August 2016",
+      "url": "https://www.coursera.org/learn/ruby-on-rails-intro/home/welcome"
+      }, {
+      "title": "Intro to Ajax",
+      "school": "Udacity",
+      "dates": " September 2016",
+      "url": "https://www.udacity.com/course/intro-to-ajax--ud110"
+      }, {
+      "title": "Browser Rendering Optimization",
+      "school": "Udacity",
+      "dates": " August 2016",
+      "url": "https://www.udacity.com/course/browser-rendering-optimization--ud860"
+      }, {
+      "title": "Website Performance Optimization",
+      "school": "Udacity",
+      "dates": " August 2016",
+      "url": "https://www.udacity.com/course/website-performance-optimization--ud884"
+      }, {
         "title": "HTML5 Canvas",
         "school": "Udacity",
         "dates": " July 2016",
@@ -72,32 +92,39 @@ var education = {
         "url": "https://www.udemy.com/code-dynamic-websites/learn/v4/overview",
         "school": "Code College",
         "dates": "July 2016",
-        "title": "Programming Foundations: HTML5 + CSS3 for Entrepreneurs",
-        "school": "Udemy",
-        "dates": " July 2016",
-        "url": "https://www.udemy.com/html-css-more/learn/v4/overview"
+        "url": "https://www.udemy.com/code-dynamic-websites/learn/v4/overview",
+        }, {
+          "title": "Intro to jQUERY",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/intro-to-jquery--ud245"
         }, {
           "title": "JavaScript Basics",
           "school": "Udacity",
           "dates": " July 2016",
           "url": "https://www.udacity.com/course/javascript-basics--ud804"
         }, {
-            "title": "Intro To HTMl and CSS",
+          "title": "Responsive Images",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/responsive-images--ud882"
+        }, {
+          "title": "Responsive Web Design Fundamentals",
+          "school": "Udacity",
+          "dates": " July 2016",
+          "url": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893"
+        }, {
+            "title": "Intro To HTML and CSS",
             "school": "Udacity",
             "dates": "June 2016",
             "url": "https://www.udacity.com/courses/intro-to-html-and-css--ud304"
-        }, {
-          "title": "Programming Foundations: HTML5 + CSS3 for Entrepreneurs",
-          "school": "Udemy",
-          "dates": " June 2016",
-          "url": "https://www.udemy.com/html-css-more/learn/v4/overview"
     }, ],
 };
 
 var projects = {
     "projects": [{
         "title": "Portfolio",
-        "url": "https://github.com/Chrisx55/Portfolio-Project",
+        "url": "https://github.com/ChrisB55/Portfolio-Project",
         "date": "2016",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
         "images": ["images/197x148.gif"]
