@@ -3,14 +3,14 @@ var bio = {
     "role": "Web Developer",
     "contacts": {
         "mobile": "202 555-5555",
-        "email": "christopherXXXX@gmail.com",
-        "github": "https://github.com/Chrisx55",
-        "twitter": "@chrisX",
+        "email": "christopherwilliambrown@gmail.com",
+        "github": "https://github.com/Chrisb55",
+        "twitter": "@ChrisBrown_DC",
         "location": "Washington D.C.",
     },
     "welcomeMessage": "Welcome to my Resume page.",
     "skills": ["HTML5", "CSS", "JS", "Digital Communications", "Social Media", "Brazilian Jiu Jitsu"],
-    "biopic": "images/fry.jpg"
+    "biopic": "images/HeadshotCbrown.jpg"
 };
 
 var work = {
