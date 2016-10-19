@@ -58,11 +58,27 @@ var education = {
         "url": "http://www.cua.edu"
     }],
     "onlineCourses": [{
+      "title": "JavaScript Testing",
+      "school": "Udacity",
+      "dates": " October 2016",
+      "url": "https://www.udacity.com/course/javascript-testing--ud549"
+        }, {
       "title": "Ruby on Rails: An Introduction",
       "school": "John Hopkins University",
-      "dates": " August 2016",
+      "dates": " September 2016",
       "url": "https://www.coursera.org/learn/ruby-on-rails-intro/home/welcome"
       }, {
+      "title": "Google Map API",
+      "school": "Udacity",
+      "dates": " September 2016",
+      "url": "https://www.udacity.com/course/google-maps-apis--ud864"
+      }, {
+      "title": "JavaScript Design Patterns",
+      "school": "Udacity",
+      "dates": " September 2016",
+      "url": "https://www.udacity.com/course/javascript-design-patterns--ud989"
+      }, {
+
       "title": "Intro to Ajax",
       "school": "Udacity",
       "dates": " September 2016",
